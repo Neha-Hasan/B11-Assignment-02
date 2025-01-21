@@ -109,7 +109,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: url('background-image.png'); /* Replace with your image path */
   }
   
   .curriculum-section h1 {
@@ -133,7 +132,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: url('background-image.png'); /* Replace with your image path */
   }
   
   .curriculum-section h1 {
