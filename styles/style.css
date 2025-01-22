@@ -92,7 +92,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
+} 
 .curriculum-section {
   text-align: center;
   padding: 60px 0;
@@ -293,12 +293,18 @@ body {
     grid-column: 1 / 2;
   }
 }
+
+
 /* Footer section */
 
 .footer {
   background-color: #00aaff;
   color: #fff;
   padding: 20px 0;
+  width: 1439px;
+  height: 519px;
+  left: 1px;
+  top: 2572px;
 }
 
 .footer-container {
@@ -394,5 +400,188 @@ body {
 }
 
 
+/* Responsive media query */
+
+
+@media (max-width: 1024px) { /* Laptop */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-bottom: 20px;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) { /* Mobile */
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8em;
+  }
+
+  .hero-text p {
+    font-size: 1em;
+  }
+
+  .enroll-btn {
+    width: 150px;
+    height: 40px;
+    font-size: 0.9em;
+  }
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1024px) { /* Laptop */
+  .curriculum-container {
+    gap: 15px;
+    justify-content: space-evenly;
+  }
+
+  .curriculum-card {
+    width: 280px;
+  }
+}
+
+@media (max-width: 576px) { /* Mobile */
+  .curriculum-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .curriculum-card {
+    width: 100%; 
+    max-width: 300px; 
+    margin: 0 auto; 
+  }
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px) { /* Laptop */
+  .stories-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+
+  .main-story {
+    grid-column: 1 / 3; 
+    grid-row: 1 / 2;
+  }
+
+  .side-story {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .view-all-button {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) { /* Mobile */
+
+    .stories-grid {
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: auto auto; 
+      gap: 20px;
+    }
+  
+    .main-story {
+      display: none !important; 
+    }
+  
+    .side-story:nth-child(2),
+    .side-story:nth-child(3),
+    .side-story:nth-child(4),
+    .side-story:nth-child(5) {
+      grid-column: auto; 
+      grid-row: auto;
+    }
+  
+    .view-all-button {
+      display: block;
+      margin: 20px auto 0; 
+    }
+  }
+
+  /* Media Queries */
+
+
+@media (max-width: 576px) { /* Mobile */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-description {
+    text-align: center;
+  }
+
+  .footer-center {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+  }
+
+  
+  .footer-right {
+    text-align: center;
+  }
+
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+  }
+}
+
+
+  
 
 
